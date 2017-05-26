@@ -16,7 +16,7 @@ namespace Anagram_Program
             string str = "sagiv";
 
             Console.WriteLine("The anagram, tell me about it (type as one word)");
-
+            
             str = Console.ReadLine();
             char[] arr = str.ToCharArray();
 

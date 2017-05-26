@@ -27,13 +27,16 @@ namespace Anagram_Program
 
         public static void GetPer(char[] list)
         {
+            
             HashDict.HashDict dictionaryHash = new HashDict.HashDict();
             Hashtable openWith = new Hashtable();
             openWith = dictionaryHash.dictionary;
-         
+            char[] templist;
             int x = list.Length - 1;
+
             GetPer(list, 0, x, ref openWith);
-         
+             
+            
             
         }
 
@@ -42,6 +45,7 @@ namespace Anagram_Program
 
             if (k == m)
             {
+
                 string s = new string(list);
 
                 if (openWith.Contains(s))
@@ -62,6 +66,6 @@ namespace Anagram_Program
                 }
         }
 
-     
+
     }
 }
